@@ -5,6 +5,7 @@ print("Угадай букву!")
 print("Как переводится слово 'яблоко' на английском?")
 while input_word != word_to_guess:
     input_word = str(input("Введите слово: "))
+    input_word = input_word.lower()
     if input_word == word_to_guess:
         print("Вы угадали!")
     else:
